@@ -96,8 +96,8 @@ begin
 --        wait for clk_period * 21;
 
 --        sqrt(225)
---        we <= "11100001";
---        wait for clk_period * 21; 
+        we <= "11100001";
+        wait for clk_period * 21; 
 
 --        sqrt(14,0625)
 --        we <= "11100001";

@@ -3,8 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std .all;
 use ieee.std_logic_unsigned.all;
 
-
-
 entity top is 
     Port(
     clk, reset : in std_logic;
@@ -26,7 +24,6 @@ signal mnozenie2 : std_logic_vector(5 downto 0):=(others => '0');
 signal mnozenie3 : std_logic_vector(7 downto 0):=(others => '0');
 signal wynikrejestr : std_logic_vector(3 downto 0):=(others => '0');
 
-
 begin
 square : process (clk, reset, we)
 begin
@@ -46,32 +43,29 @@ begin
                 wynikrejestr(3) <= '1';
                 obliczenia1 <= "11";
             end if;
+            
             mnozenie1 <= obliczenia1*obliczenia1;
-            
-            
             if mnozenie1 > pierwsze4bity then
                 wy(2) <= '0';
                 wynikrejestr(2) <= '0';
-                obliczenia2 <= wynikrejestr(3 downto 2) & ('1');
             else
                 wy(2) <= '1';
                 wynikrejestr(2) <= '1';
-                obliczenia2 <= wynikrejestr(3 downto 2) & ('1');
             end if;
-          
+            obliczenia2 <= wynikrejestr(3 downto 2) & ('1'); 
             mnozenie2 <= obliczenia2*obliczenia2;
             
             if mnozenie2 > pierwsze6bity then
                 wy(1) <= '0';
-                wynikrejestr(1) <= '0';
-                obliczenia3 <= wynikrejestr(3 downto 1) & ('1');
+                wynikrejestr(1) <= '0';       
             else
                 wy(1) <= '1';
                 wynikrejestr(1) <= '1';
-                obliczenia3 <= wynikrejestr(3 downto 1) & ('1');
             end if;
             
+            obliczenia3 <= wynikrejestr(3 downto 1) & ('1');
             mnozenie3 <= obliczenia3*obliczenia3;
+            
             if mnozenie3 > pierwsze8bity then
                 wy(0) <= '0';
             else
