@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="636001fs"></ZoomEndTime>
+      <Cursor1Time time="230000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/we" type="array">
+      <obj_property name="ElementShortName">we[7:0]</obj_property>
+      <obj_property name="ObjectShortName">we[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/wy" type="array">
+      <obj_property name="ElementShortName">wy[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wy[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/obliczenia1" type="array">
+      <obj_property name="ElementShortName">obliczenia1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">obliczenia1[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/obliczenia2" type="array">
+      <obj_property name="ElementShortName">obliczenia2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">obliczenia2[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/obliczenia3" type="array">
+      <obj_property name="ElementShortName">obliczenia3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">obliczenia3[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/mnozenie1" type="array">
+      <obj_property name="ElementShortName">mnozenie1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mnozenie1[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/mnozenie2" type="array">
+      <obj_property name="ElementShortName">mnozenie2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">mnozenie2[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/mnozenie3" type="array">
+      <obj_property name="ElementShortName">mnozenie3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mnozenie3[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/i_top/wynikrejestr" type="array">
+      <obj_property name="ElementShortName">wynikrejestr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wynikrejestr[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
